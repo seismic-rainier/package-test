@@ -16,9 +16,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
-      - run: npm version ${TAG_NAME} --git-tag-version=false
+      - run: npm version ${TAG_NAME} --git-tag-version=false -ws
         env:
           TAG_NAME: ${{ github.event.release.tag_name }}
-      - run: npm whoami; npm --ignore-scripts publish
+      - run: npm whoami; npm --ignore-scripts publish -ws
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
