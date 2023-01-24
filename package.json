@@ -1,0 +1,9 @@
+{
+  "name": "package-test",
+  "private": true,
+  "author": "cschleiden",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
+}

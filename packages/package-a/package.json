@@ -1,0 +1,8 @@
+{
+  "name": "@seismic-rainier/package-a",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "author": "cschleiden",
+  "license": "MIT"
+}
