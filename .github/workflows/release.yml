@@ -24,6 +24,6 @@ jobs:
       - run: npm version ${TAG_NAME} --git-tag-version=false -ws
         env:
           TAG_NAME: ${{ github.event.release.tag_name || inputs.tag }}
-      - run: npm --ignore-scripts publish -ws
+      - run: npm --ignore-scripts publish --access public -ws
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
