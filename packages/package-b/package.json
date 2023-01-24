@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "cschleiden",
   "license": "MIT",
+  "private": false,
   "dependencies": {
     "@seismic-rainier/package-a": "*"
   }

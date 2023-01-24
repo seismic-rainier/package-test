@@ -4,5 +4,6 @@
   "description": "",
   "main": "index.js",
   "author": "cschleiden",
-  "license": "MIT"
+  "license": "MIT",
+  "private": false
 }
