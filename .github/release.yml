@@ -3,7 +3,7 @@ changelog:
     - title: package-a
       labels:
         - package-a
-		- title: package-b
+    - title: package-b
       labels:
         - package-b
     - title: Other Changes
