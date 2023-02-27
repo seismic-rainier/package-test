@@ -25,6 +25,6 @@ jobs:
       # - run: npx lerna version --no-push --no-git-tag-version -y ${TAG_NAME}
       #   env:
       #     TAG_NAME: ${{ github.event.release.tag_name || inputs.tag }}
-      - run: npx lerna publish from-git
+      - run: npx lerna publish from-git -y
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
