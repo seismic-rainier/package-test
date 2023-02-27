@@ -32,6 +32,6 @@ jobs:
       - run: echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > .npmrc
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npx lerna publish ${{ inputs.bump }} -y
+      - run: npx lerna publish ${{ inputs.bump }} -y --loglevel silly
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
