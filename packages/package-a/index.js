@@ -1,3 +1,3 @@
 export function doSomething() {
-  console.log("hello from a - 2")
+  console.log("hello from a - 3")
 }
