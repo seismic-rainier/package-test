@@ -7,6 +7,6 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@seismic-rainier/package-a": "*"
+    "@seismic-rainier/package-a": "file:package-a"
   }
 }
