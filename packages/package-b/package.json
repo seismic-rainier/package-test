@@ -1,12 +1,12 @@
 {
   "name": "@seismic-rainier/package-b",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "",
   "main": "index.js",
   "author": "cschleiden",
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@seismic-rainier/package-a": "file:package-a"
+    "@seismic-rainier/package-a": "*"
   }
 }
