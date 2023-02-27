@@ -28,6 +28,8 @@ jobs:
       - run: echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > .npmrc
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
       - run: npx lerna publish ${{ github.event.release.tag_name || inputs.tag }} -y
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
