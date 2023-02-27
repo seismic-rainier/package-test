@@ -30,9 +30,9 @@ jobs:
           cache: npm
           token: ${{ secrets.NPM_TOKEN }}
       - run: npm ci
-      - run: echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > .npmrc
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npx lerna publish ${{ inputs.bump }} -y --loglevel silly
+      - run: npx lerna publish ${{ inputs.bump }} -y --loglevel silly --no-verify-access
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
